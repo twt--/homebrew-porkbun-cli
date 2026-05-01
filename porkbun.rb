@@ -11,7 +11,7 @@ class Porkbun < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/twt--/porkbun-cli/releases/download/v0.0.1/porkbun-cli_0.0.1_darwin_amd64.tar.gz"
-      sha256 "29279913450b89376b39266657ba7b3d1474a07c03003ed88d9957ed1e97c402"
+      sha256 "b6af03ca0c120a6590bf08406e1640aff482a601f1f2955c9b8328858f77ba4a"
 
       define_method(:install) do
         bin.install "porkbun"
@@ -19,7 +19,7 @@ class Porkbun < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/twt--/porkbun-cli/releases/download/v0.0.1/porkbun-cli_0.0.1_darwin_arm64.tar.gz"
-      sha256 "16139272d08f61eabf739051652c1236e561035d6af3f5ed974df1cc313604bc"
+      sha256 "0511ceb6a66620d2bda2f41a9c4963adb5bbbb722bd37407851300bd3deb4e63"
 
       define_method(:install) do
         bin.install "porkbun"
@@ -30,14 +30,14 @@ class Porkbun < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/twt--/porkbun-cli/releases/download/v0.0.1/porkbun-cli_0.0.1_linux_amd64.tar.gz"
-      sha256 "d56594f248c35f0b8d2ad6a2f9e034e0156993acb12fd0143ec236df6569bda9"
+      sha256 "cf7df4a98f5185978d35ea374208d12a7b614cd31c4a18df02f19388dd82fba8"
       define_method(:install) do
         bin.install "porkbun"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/twt--/porkbun-cli/releases/download/v0.0.1/porkbun-cli_0.0.1_linux_arm64.tar.gz"
-      sha256 "fc130fc3c9d033a7012eaaa2cffda7a05af8101816a96ea3af4733727e976672"
+      sha256 "b0bce89a15840b3fafe0bb13a323b31f5dbdb1751a11c59c138a71c8ebef238c"
       define_method(:install) do
         bin.install "porkbun"
       end
